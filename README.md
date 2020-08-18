@@ -1,16 +1,14 @@
-# PO18-Novel-txt-downloader
+# PO18-txt-downloader
 
-将 https://www.po18.tw 网站上的小说下载为 txt 文档。
+将 www.po18.tw 上的小说下载为 txt 文稿。
 
-大陆地区无法访问此网站，须使用代理。
-
-只能取得免费 / 已购章节内容。收费章节请先手动购买。
-
+只能取得免费 / 已购章节内容。
 
 
 开发环境：Python 3.7
 
-参考了 [po18 小说下载器 demo](https://www.twblogs.net/a/5c949874bd9eee35fc15f5ef/zh-cn)（Python 2.7），原文仅提供示例函数，已略作整理 copy 在本项目的 `reference.py` 里。
+参考了 [自制小说下载器](https://mp.weixin.qq.com/s/a0ORywWh1l0lHK5iG2PaUg)（Python 2.7）。
+
 
 ## import
 
@@ -20,9 +18,10 @@ requests
 
 lxml
 
+
 ## How to use
 
-1. 先找到要下载的书籍 ID（网址`/books/` 后面那串数字），赋值给 `book_number` 。
+1. 找到要下载的书籍 ID（网址`/books/` 后面那串数字），赋值给 `book_number` 。
 
 2. 找到章节内容总数（看目录里最新一章前面的【四位数字】，或者从 `狀態 未完結(目前xxx章回)` 这里看），赋值给 `chapter_sum`。
 
